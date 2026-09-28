@@ -1,81 +1,214 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Syncqo — Privacy Policy</title>
-<style>body{font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;max-width:760px;margin:40px auto;padding:0 20px;color:#1f2937;line-height:1.6}
-h1{font-size:32px}h2{font-size:20px;margin-top:28px;color:#1d4ed8}code{background:#eef2ff;padding:1px 5px;border-radius:4px}.muted{color:#6b7280}a{color:#1d4ed8}</style>
-</head><body>
-<h1>Syncqo — Privacy Policy</h1>
-<p class='muted'>Last updated: 2026-09-25</p>
-<p>Syncqo ("the app", "we") is a personal cloud transfer tool that runs entirely on your device.</p>
-<p>This policy explains what the app accesses, how it is used, and what leaves your device.</p>
-<h2>The short version</h2>
-<ul>
-<li>Syncqo has <strong>no backend server of our own</strong>. We do not operate servers that receive, store, or</li>
-</ul>
-<p>  process your files or personal data.</p>
-<ul>
-<li>Your files move <strong>directly between your device and the cloud storage accounts you connect</strong></li>
-</ul>
-<p>  (e.g. Google Drive, Dropbox, OneDrive, S3). We are not a middleman for that data.</p>
-<ul>
-<li>Credentials for your cloud accounts are stored <strong>encrypted on your device</strong> and never transmitted</li>
-</ul>
-<p>  to us.</p>
-<h2>Information the app accesses</h2>
-<p><strong>Google account (sign-in).</strong> Syncqo uses Google Sign-In to let you into the app. We receive your</p>
-<p>basic Google profile (email address and name) from Google for the purpose of authenticating you and</p>
-<p>enabling your subscription entitlement. This information is used on your device and is **not sent to</p>
-<p>any server operated by us**.</p>
-<p><strong>Cloud storage credentials.</strong> When you connect a cloud provider, the access tokens or keys for that</p>
-<p>provider are stored <strong>encrypted at rest</strong> on your device (hardware-backed keystore) and are used</p>
-<p>only to perform the transfers you request. They are never sent to us.</p>
-<p><strong>Files and folders you choose to transfer.</strong> To move, back up, or sync your data, the app reads the</p>
-<p>files and folders you select (on your phone and/or in your connected clouds) and writes them to the</p>
-<p>destination you choose. This content flows directly between your device and your cloud accounts. We</p>
-<p>do not receive, retain, or inspect it.</p>
-<p><strong>Local network (InstaSend).</strong> For nearby device-to-device transfers, the app runs a temporary local</p>
-<p>web server on your Wi-Fi network so another device can receive a file you send. App-to-app transfers</p>
-<p>are encrypted; transfers to a plain browser are unencrypted on the local network by design.</p>
-<h2>Advertising</h2>
-<p>Syncqo's Free tier offers an optional way to skip a wait by watching a short rewarded video ad
-("Watch ad to unblock"). This is entirely opt-in — nothing plays unless you choose to watch one,
-and Pro subscribers never see ads at all. Rewarded ads are served by <strong>Google AdMob</strong>,
-which collects your device's advertising ID and other technical identifiers to select and deliver
-ads and to prevent fraud, per Google's own advertising and privacy policies. For users in the
-EEA/UK, ads are only requested after you respond to a consent form (via Google's User Messaging
-Platform) governing that data use. This ad data is handled by Google's infrastructure, not ours —
-see "Information we collect on our servers" below for what that distinction means in practice.
-You can review or reset your advertising ID, and control ad personalization generally, in your
-device's Google Settings → Ads.</p>
-<h2>Information we collect on our servers</h2>
-<p><strong>None.</strong> Syncqo (the developer) does not operate our own analytics or
-data-collection backend, and we do not build user profiles. The one exception is the AdMob SDK
-described above: when a Free-tier user opts to watch a rewarded ad, Google's ad infrastructure
-(not ours) collects the advertising data needed to serve that ad. We never see or receive that
-data ourselves.</p>
-<h2>Payments</h2>
-<p>Subscriptions are processed by <strong>Google Play Billing</strong>. We do not receive or store your payment</p>
-<p>details. Google's handling of that data is governed by Google's own privacy policy.</p>
-<h2>Permissions we request and why</h2>
-<ul>
-<li><strong>All files access / media access</strong> — to let you browse and back up files and folders on your</li>
-</ul>
-<p>  device that you select.</p>
-<ul>
-<li><strong>Camera</strong> — only to scan an InstaSend QR code when receiving a file.</li>
-<li><strong>Notifications</strong> — to show transfer progress and completion.</li>
-<li><strong>Network / foreground service</strong> — to run and complete transfers reliably, including in the</li>
-</ul>
-<p>  background.</p>
-<h2>Data retention and deletion</h2>
-<p>Because we hold no data on our servers, there is nothing for us to retain or delete on our side.</p>
-<p>To remove all app data from your device, sign out and uninstall the app; this deletes the encrypted</p>
-<p>credential store and all local app data. To revoke Syncqo's access to a cloud provider, remove its</p>
-<p>authorization in that provider's account settings.</p>
-<h2>Children</h2>
-<p>Syncqo is not directed to children under 13 and does not knowingly collect data from them.</p>
-<h2>Changes</h2>
-<p>We may update this policy; the "Last updated" date above reflects the latest version.</p>
-<h2>Contact</h2>
-<p>Questions about this policy: <strong>avkatiyar@adobe.com</strong></p>
-</body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Privacy Policy — StorkLabs</title>
+<meta name="description" content="StorkLabs privacy policy. Our apps, including Syncqo, have no backend and do not collect your personal data." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🐦%3C/text%3E%3C/svg%3E" />
+<style>
+  :root{--ink:#12151c;--ink-soft:#4a5160;--faint:#8a91a1;--bg:#f7f8fb;--surface:#fff;
+    --hairline:#e7eaf0;--accent:#4f46e5;--accent-2:#0ea5a4;--radius:20px;--maxw:820px;
+    --shadow:0 1px 2px rgba(18,21,28,.04),0 12px 40px rgba(18,21,28,.06)}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,Helvetica,Arial,sans-serif;
+    color:var(--ink);background:var(--bg);line-height:1.7;-webkit-font-smoothing:antialiased}
+  a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  header.nav{position:sticky;top:0;z-index:20;backdrop-filter:saturate(1.4) blur(12px);
+    background:rgba(247,248,251,.8);border-bottom:1px solid var(--hairline)}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:66px;max-width:1040px;margin:0 auto;padding:0 24px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:-.01em;color:var(--ink);font-size:18px}
+  .logo{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;color:#fff;
+    background:linear-gradient(135deg,var(--accent),var(--accent-2));font-size:18px}
+  .nav a.link{color:var(--ink-soft);font-weight:500;font-size:15px;margin-left:22px}
+  .nav a.link:hover{color:var(--ink);text-decoration:none}
+
+  .hero{padding:64px 0 24px}
+  .eyebrow{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+  h1{font-size:clamp(30px,5vw,44px);letter-spacing:-.02em;margin:12px 0 10px}
+  .updated{color:var(--faint);font-size:14px}
+
+  .doc{background:var(--surface);border:1px solid var(--hairline);border-radius:var(--radius);
+    padding:clamp(24px,4vw,48px);box-shadow:var(--shadow);margin:24px 0 56px}
+  .doc h2{font-size:22px;letter-spacing:-.01em;margin:34px 0 10px;padding-top:8px}
+  .doc h2:first-child{margin-top:0}
+  .doc h3{font-size:17px;margin:20px 0 6px}
+  .doc p{color:var(--ink-soft);margin:10px 0}
+  .doc ul{color:var(--ink-soft);margin:10px 0 10px 22px}
+  .doc li{margin:7px 0}
+  .doc strong{color:var(--ink)}
+  .callout{background:#eef0fe;border:1px solid #e2e4fb;border-radius:14px;padding:16px 18px;margin:18px 0;color:#33369a}
+  .callout strong{color:#2a2c86}
+  .tldr{background:#e6faf7;border:1px solid #cdeeea;border-radius:14px;padding:16px 18px;margin:6px 0 8px;color:#0b6b68}
+  .toc{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 6px}
+  .toc a{font-size:13px;color:var(--ink-soft);background:var(--bg);border:1px solid var(--hairline);
+    padding:6px 12px;border-radius:999px}
+  .toc a:hover{text-decoration:none;border-color:#d6dae3}
+  footer{border-top:1px solid var(--hairline);padding:34px 0 60px;color:var(--faint);font-size:14px}
+  footer a{color:var(--ink-soft)}
+</style>
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <span class="brand"><span class="logo">🐦</span> StorkLabs</span>
+  </div>
+</header>
+
+<main>
+  <div class="wrap hero">
+    <p class="eyebrow">Legal</p>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: September 28, 2026</p>
+  </div>
+
+  <div class="wrap">
+    <div class="doc">
+      <div class="tldr"><strong>The short version:</strong> StorkLabs runs no servers and has no backend.
+        Our apps — including <strong>Syncqo</strong> — do not collect, transmit, or store your personal
+        data with us. Your files and credentials stay on your device and move only between you and the
+        third-party services <em>you</em> choose to connect. Syncqo uses Google Analytics (Firebase) to
+        see anonymized, aggregate feature usage, and its Free tier offers an optional rewarded ad served
+        by Google AdMob — see Advertising and Analytics below for both.</div>
+
+      <div class="toc">
+        <a href="#who">1. Who we are</a>
+        <a href="#collect">2. What we collect</a>
+        <a href="#device">3. Data on your device</a>
+        <a href="#third">4. Third-party services</a>
+        <a href="#ads">5. Advertising</a>
+        <a href="#analytics">6. Analytics</a>
+        <a href="#insta">7. Nearby sharing</a>
+        <a href="#perms">8. Permissions</a>
+        <a href="#children">9. Children</a>
+        <a href="#security">10. Security</a>
+        <a href="#retention">11. Retention &amp; deletion</a>
+        <a href="#changes">12. Changes</a>
+        <a href="#contact">13. Contact</a>
+      </div>
+
+      <h2 id="who">1. Who we are</h2>
+      <p>This Privacy Policy explains how StorkLabs ("<strong>StorkLabs</strong>", "we", "us", or "our")
+        handles information in connection with the mobile applications we publish, including
+        <strong>Syncqo</strong> (each, an "App", and together the "Apps"). It applies to the Apps and this website.</p>
+      <p>The Apps are designed to be <strong>backend-less</strong>: StorkLabs does not operate servers that
+        receive, process, or store your content or personal information. Because of this architecture,
+        the vast majority of "data handling" described in typical privacy policies simply does not occur here.</p>
+
+      <h2 id="collect">2. Information we collect</h2>
+      <p><strong>We do not collect personal information ourselves.</strong> StorkLabs does not have accounts
+        of our own, and does not receive your files, folder names, cloud credentials, contacts, or location.
+        Syncqo does use Google Analytics (Firebase) for anonymized, aggregate product usage, and its
+        Free tier shows an optional rewarded ad — both described in Advertising and Analytics below.</p>
+      <ul>
+        <li><strong>No account.</strong> You do not create a StorkLabs account and do not give us an email, name, or password.</li>
+        <li><strong>No behavioral ad tracking.</strong> We do not embed third-party trackers for cross-app or cross-site behavioral profiling.</li>
+        <li><strong>No content access.</strong> The files you transfer, and the credentials you use to reach your clouds, are never sent to StorkLabs.</li>
+      </ul>
+      <p>Limited, non-identifying diagnostic information (such as crash reports or aggregate install and
+        purchase counts) may be made available to us by the app store or operating system. That information is
+        collected and controlled by those platforms under their own policies, not by StorkLabs, and we use it only
+        to keep the Apps working.</p>
+
+      <h2 id="device">3. Data stored on your device</h2>
+      <p>To function, the Apps store data <strong>locally on your device only</strong>. This may include the
+        cloud connections you set up, access tokens issued by your cloud providers, your transfer history and
+        settings, and cached files created during a transfer. In Syncqo, sensitive configuration such as cloud
+        credentials is protected using the operating system's secure key storage where available.</p>
+      <p>StorkLabs cannot see, retrieve, or recover this on-device data. It remains under your control and is
+        removed when you clear the App's data or uninstall the App.</p>
+
+      <h2 id="third">4. Third-party services</h2>
+      <p>The Apps let you connect to and interact with third-party services that <strong>you</strong> choose.
+        When you use those services, your information is handled by them under <strong>their</strong> privacy
+        policies and terms, over which StorkLabs has no control and for which StorkLabs is not responsible. These may include:</p>
+      <ul>
+        <li><strong>Cloud storage providers</strong> (for example Google Drive, Google Photos, Microsoft OneDrive,
+          Dropbox, and similar), which you authorize directly via secure sign-in (OAuth). Your files and tokens
+          flow between your device and those providers, not through StorkLabs.</li>
+        <li><strong>Google Play Billing</strong> and <strong>Google Play Services</strong>, which process purchases,
+          subscriptions, and (if used) sign-in. Payment details are handled entirely by Google; StorkLabs never
+          receives your card or payment information.</li>
+      </ul>
+      <p>We encourage you to review the privacy policies of any service you connect. Your use of those services
+        is at your own discretion and risk.</p>
+
+      <h2 id="ads">5. Advertising</h2>
+      <p>Syncqo's Free tier offers an optional way to skip a wait by watching a short rewarded video ad
+        ("Watch ad to unblock"). This is entirely opt-in — nothing plays unless you choose to watch one,
+        and Pro subscribers never see ads at all. Rewarded ads are served by <strong>Google AdMob</strong>,
+        which collects your device's advertising ID and other technical identifiers to select and deliver
+        ads and to prevent fraud, per Google's own advertising and privacy policies. For users in the
+        EEA/UK, ads are only requested after you respond to a consent form (via Google's User Messaging
+        Platform) governing that data use. This data is handled by Google's infrastructure, not by
+        StorkLabs — we never receive or see it ourselves. You can review or reset your advertising ID,
+        and control ad personalization generally, in your device's Google Settings → Ads.</p>
+
+      <h2 id="analytics">6. Analytics</h2>
+      <p>Syncqo uses <strong>Google Analytics for Firebase</strong> to understand, in the aggregate, how the
+        app is used — which screens are opened, which features (like connecting a cloud, creating a
+        scheduled transfer, or completing a transfer) are used, and how often people sign in or subscribe.
+        This is pseudonymous, product-improvement data, not an identity profile: it is tied to an
+        anonymized, one-way hashed identifier derived from your account (never your raw email address or
+        name), not to you personally, and it never includes your files, folder names, or cloud credentials.
+        This data is processed by Google under Google's own privacy and data-processing terms. It is
+        separate from the AdMob advertising data described above, even though both are Google products.</p>
+
+      <h2 id="insta">7. Nearby sharing (InstaSend / InstaReceive)</h2>
+      <p>Syncqo's nearby-sharing features transfer files <strong>directly between devices over your local
+        Wi-Fi network</strong>. These transfers do not pass through StorkLabs and are not stored by us. You are
+        responsible for the network you use and for who you share with. Anyone with the sharing link or QR code
+        on the same network during an active session may be able to download the shared content.</p>
+
+      <h2 id="perms">8. Device permissions</h2>
+      <p>The Apps may request device permissions (such as access to files/storage, notifications, camera for
+        scanning QR codes, or network access) solely to provide the features you invoke. These permissions are
+        used on-device to perform the requested action; the data accessed is not transmitted to StorkLabs. You
+        can grant or revoke permissions at any time in your device settings.</p>
+
+      <h2 id="children">9. Children</h2>
+      <p>The Apps are not directed to children and are not intended for use by anyone under the age required to
+        form a binding contract or the minimum age of digital consent in their jurisdiction. We do not knowingly
+        collect information from children.</p>
+
+      <h2 id="security">10. Security</h2>
+      <p>We design the Apps to keep sensitive data on your device and to use platform security features where
+        available. However, <strong>no method of storage or transmission is completely secure</strong>. The Apps
+        are provided "as is", and to the maximum extent permitted by law StorkLabs disclaims responsibility for
+        unauthorized access to, or loss, misuse, or corruption of, data on your device, on your networks, or on
+        third-party services. You are responsible for securing your device, your networks, and your accounts.</p>
+
+      <h2 id="retention">11. Data retention &amp; deletion</h2>
+      <p>Because we do not collect your personal data, there is nothing for StorkLabs to retain or delete on your
+        behalf. In Syncqo, Settings → Account → "Delete my data" revokes the app's Google sign-in access and
+        permanently erases the encrypted cloud credentials stored on your device — no uninstall required.
+        Uninstalling the App also removes everything. To disconnect a single cloud provider instead, revoke the
+        App's access from that provider's own account/security settings.</p>
+
+      <h2 id="changes">12. Changes to this policy</h2>
+      <p>We may update this Privacy Policy from time to time. Changes are effective when posted on this page with a
+        revised "Last updated" date. Your continued use of the Apps after changes take effect constitutes acceptance
+        of the updated policy.</p>
+
+      <h2 id="contact">13. Contact</h2>
+      <p>Questions about this Privacy Policy? Contact us at
+        <a href="mailto:hello@storklabs.store">hello@storklabs.store</a>.</p>
+
+      <div class="callout"><strong>Note:</strong> This document describes StorkLabs' practices only. It does not
+        cover, and StorkLabs is not responsible for, the practices of any third-party service, network, device,
+        or platform you use alongside the Apps.</div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap" style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap">
+    <span>© <span id="yr"></span> StorkLabs. All rights reserved.</span>
+    <span><a href="mailto:hello@storklabs.store">Contact</a></span>
+  </div>
+</footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
