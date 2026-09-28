@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Delete your Syncqo data — StorkLabs</title>
+<meta name="description" content="How to delete your data and disconnect your account in Syncqo, the cloud sync and backup app by StorkLabs." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🐦%3C/text%3E%3C/svg%3E" />
+<style>
+  :root{--ink:#12151c;--ink-soft:#4a5160;--faint:#8a91a1;--bg:#f7f8fb;--surface:#fff;
+    --hairline:#e7eaf0;--accent:#4f46e5;--accent-2:#0ea5a4;--radius:20px;--maxw:820px;
+    --shadow:0 1px 2px rgba(18,21,28,.04),0 12px 40px rgba(18,21,28,.06)}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,Helvetica,Arial,sans-serif;
+    color:var(--ink);background:var(--bg);line-height:1.7;-webkit-font-smoothing:antialiased}
+  a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  header.nav{position:sticky;top:0;z-index:20;backdrop-filter:saturate(1.4) blur(12px);
+    background:rgba(247,248,251,.8);border-bottom:1px solid var(--hairline)}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:66px;max-width:1040px;margin:0 auto;padding:0 24px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:-.01em;color:var(--ink);font-size:18px}
+  .logo{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;color:#fff;
+    background:linear-gradient(135deg,var(--accent),var(--accent-2));font-size:18px}
+  .nav a.link{color:var(--ink-soft);font-weight:500;font-size:15px;margin-left:22px}
+  .nav a.link:hover{color:var(--ink);text-decoration:none}
+
+  .hero{padding:64px 0 24px}
+  .eyebrow{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+  h1{font-size:clamp(30px,5vw,44px);letter-spacing:-.02em;margin:12px 0 10px}
+  .updated{color:var(--faint);font-size:14px}
+
+  .doc{background:var(--surface);border:1px solid var(--hairline);border-radius:var(--radius);
+    padding:clamp(24px,4vw,48px);box-shadow:var(--shadow);margin:24px 0 56px}
+  .doc h2{font-size:22px;letter-spacing:-.01em;margin:34px 0 10px;padding-top:8px}
+  .doc h2:first-child{margin-top:0}
+  .doc h3{font-size:17px;margin:20px 0 6px}
+  .doc p{color:var(--ink-soft);margin:10px 0}
+  .doc ul,.doc ol{color:var(--ink-soft);margin:10px 0 10px 22px}
+  .doc li{margin:7px 0}
+  .doc strong{color:var(--ink)}
+  .callout{background:#eef0fe;border:1px solid #e2e4fb;border-radius:14px;padding:16px 18px;margin:18px 0;color:#33369a}
+  .callout strong{color:#2a2c86}
+  .tldr{background:#e6faf7;border:1px solid #cdeeea;border-radius:14px;padding:16px 18px;margin:6px 0 8px;color:#0b6b68}
+  .toc{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 6px}
+  .toc a{font-size:13px;color:var(--ink-soft);background:var(--bg);border:1px solid var(--hairline);
+    padding:6px 12px;border-radius:999px}
+  .toc a:hover{text-decoration:none;border-color:#d6dae3}
+  footer{border-top:1px solid var(--hairline);padding:34px 0 60px;color:var(--faint);font-size:14px}
+  footer a{color:var(--ink-soft)}
+</style>
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="../" style="color:var(--ink)"><span class="logo">🐦</span> StorkLabs</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap hero">
+    <p class="eyebrow">Syncqo · StorkLabs</p>
+    <h1>Delete your Syncqo data</h1>
+    <p class="updated">Last updated: September 28, 2026</p>
+  </div>
+
+  <div class="wrap">
+    <div class="doc">
+      <div class="tldr"><strong>The short version:</strong> Syncqo has no StorkLabs account and no server
+        holding your data, so there is nothing to delete on our side. You can erase everything Syncqo keeps
+        for you, on your own phone, in about 10 seconds, without uninstalling.</div>
+
+      <h2 id="steps">How to delete your data in the app</h2>
+      <ol>
+        <li>Open <strong>Syncqo</strong> on your Android phone.</li>
+        <li>Tap the <strong>profile icon</strong> (top-right of the Home screen) and choose <strong>Settings</strong>.</li>
+        <li>Scroll to the <strong>Account</strong> section and tap <strong>Delete my data</strong>.</li>
+        <li>Read the confirmation and tap <strong>Delete everything</strong>.</li>
+      </ol>
+      <p>Syncqo then revokes its Google sign-in access, permanently erases the encrypted cloud credentials
+        stored on your device, and restarts signed out. This cannot be undone.</p>
+
+      <h2 id="what">What is deleted, and what is not</h2>
+      <h3>Deleted immediately</h3>
+      <ul>
+        <li>Every cloud connection you added (Google Drive, Dropbox, OneDrive, and the rest) and the access
+          tokens and keys behind them, in both their encrypted and working copies.</li>
+        <li>Syncqo's Google sign-in access to your Google account (revoked).</li>
+      </ul>
+      <h3>Not affected</h3>
+      <ul>
+        <li><strong>Your files in your clouds.</strong> Syncqo never stored them, so they are untouched.</li>
+        <li><strong>Local app data on your phone</strong> such as transfer history, saved schedules, and
+          preferences. Remove these by uninstalling Syncqo, or in Android Settings → Apps → Syncqo →
+          Storage → <em>Clear storage</em>.</li>
+      </ul>
+
+      <h2 id="uninstall">Prefer to uninstall?</h2>
+      <p>Uninstalling Syncqo removes all of its data from your device. To also cut off Syncqo's access to a
+        single cloud provider, revoke Syncqo from that provider's own account or security settings.</p>
+
+      <h2 id="retention">Retention and analytics</h2>
+      <p>StorkLabs holds no copy of your files, credentials, email address, or name, so there is no retention
+        period on our side. Syncqo does send anonymized usage events (screens opened, features used) to Google
+        Analytics for Firebase, keyed to a one-way hash of your account rather than your email or name; see
+        the Analytics section of our <a href="../#analytics">Privacy Policy</a>. Google keeps this data for the
+        period configured in our analytics settings. To ask us to have your usage data removed, email
+        <a href="mailto:hello@storklabs.store">hello@storklabs.store</a> from any address and say so.</p>
+
+      <h2 id="contact">Need help?</h2>
+      <p>Email <a href="mailto:hello@storklabs.store">hello@storklabs.store</a> with "Syncqo data deletion" in the
+        subject and we will respond.</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap" style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap">
+    <span>© <span id="yr"></span> StorkLabs. All rights reserved.</span>
+    <span><a href="../">Privacy Policy</a> · <a href="mailto:hello@storklabs.store">Contact</a></span>
+  </div>
+</footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
